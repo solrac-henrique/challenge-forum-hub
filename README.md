@@ -15,8 +15,12 @@ API Rest com Spring-boot e Spring-security.
 
 ## ⚙️ Funcionalidades
 
-- [x]  CRUD de Topicos;
-- [x]  Criaçao de topicos;
+- [x] Cadastro e autenticação de usuários (login com JWT)
+- [x] CRUD de tópicos (criação, listagem, atualização e exclusão)
+- [x] Restrição de edição/exclusão apenas ao autor do tópico
+- [x] Validação para impedir títulos e mensagens duplicados do mesmo usuário
+- [x] Tratamento global de erros e exceções da API
+- [x] Senhas de usuários criptografadas com HMAC256
 
 
 ## 🛠 Tecnologias
@@ -33,6 +37,18 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
 - **[Lombok](https://projectlombok.org)**
 - **[JWT](https://jwt.io/)**
 
+## ▶️ Como executar
 
+1. Clone este repositório:
+
+   git clone https://github.com/solrac-henrique/challenge-forum-hub.git
+
+2. Configure as credenciais do banco de dados PostgreSQL no arquivo `application.properties`.
+3. Execute o projeto com Maven:
+   ./mvnw spring-boot:run
+
+4. A API estará disponível em `http://localhost:8080`.
 
 ### Autor: Carlos Henrique Martins
+
+
