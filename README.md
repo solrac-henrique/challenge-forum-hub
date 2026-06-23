@@ -4,13 +4,11 @@
 
 
 
-O projeto de topicos é um forum de duvidas ficticio sobre assuntos de programação. 
-O projeto deve possuir a criaçao de topicos, tanto a exclusão dos topicos quanto a editação só poderar ser feita pelo criador.
+Projeto de fórum de dúvidas fictício sobre assuntos de programação, desenvolvido como desafio final do Programa Oracle One (Alura + Oracle).
 
-Projeto contara com um cadastro de usuarios, usando criptografia com token JWT, com data de expiração de 3h para ter acesso as requisições.
-Todos os usuarios cadastrados serão salvos no banco de dados com senhas criptografadas em algoritmo HMAC256.
+A aplicação permite a criação de tópicos, sendo que tanto a edição quanto a exclusão só podem ser realizadas pelo usuário que criou o tópico.
 
-API Rest com Spring-boot e Spring-security.
+O sistema possui cadastro de usuários com autenticação via token JWT (expiração de 3h por sessão) e senhas armazenadas com criptografia HMAC256. A API segue o padrão REST, construída com Spring Boot e Spring Security.
 
 
 ## ⚙️ Funcionalidades
